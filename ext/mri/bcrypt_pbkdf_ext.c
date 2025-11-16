@@ -15,7 +15,7 @@ static VALUE bc_crypt_pbkdf(VALUE self, VALUE pass, VALUE salt, VALUE keylen, VA
     StringValuePtr(pass), RSTRING_LEN(pass),
     (const u_int8_t*)StringValuePtr(salt), RSTRING_LEN(salt),
     okey, okeylen,
-    NUM2ULONG(rounds));
+    NUM2UINT(rounds));
   if (ret < 0)
     return Qnil;
   out = rb_str_new((const char*)okey, okeylen);

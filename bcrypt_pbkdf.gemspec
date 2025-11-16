@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'bcrypt_pbkdf'
-  s.version = '1.1.2.rc1'
+  s.version = '1.1.3'
 
   s.summary = "OpenBSD's bcrypt_pbkdf (a variant of PBKDF2 with bcrypt-based PRF)"
   s.description = <<-EOF
@@ -22,8 +22,8 @@ Gem::Specification.new do |s|
 
   s.extensions = 'ext/mri/extconf.rb'
 
-  s.authors = ["Miklos Fazekas"]
-  s.email = "mfazekas@szemafor.com"
-  s.homepage = "https://github.com/net-ssh/bcrypt_pbkdf-ruby"
+  s.authors = ["Lauri Jutila"]
+  s.email = "noreply@github.com"
+  s.homepage = "https://github.com/ljuti/bcrypt_pbkdf-ruby"
   s.license = "MIT"
 end
