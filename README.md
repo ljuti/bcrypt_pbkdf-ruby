@@ -29,7 +29,7 @@ bundle install
 Install directly from the gem server:
 
 ```sh
-gem install bcrypt_pbkdf --version 1.1.3 --source https://gem.fury.io/reforge/
+gem install bcrypt_pbkdf --version 1.1.4 --source https://gem.fury.io/reforge/
 ```
 
 ## Acknowledgements
