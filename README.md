@@ -4,6 +4,34 @@ bcrypt_pbkdf is a ruby gem implementing bcrypt_pbkdf from OpenBSD. This is curre
 
 [![Build Status](https://github.com/net-ssh/bcrypt_pbkdf-ruby/actions/workflows/ci.yml/badge.svg?branch=master&event=push)](https://github.com/net-ssh/bcrypt_pbkdf-ruby/actions/workflows/ci.yml)
 
+## Installation
+
+This Ruby 3.4 compatible version is available from a private gem server.
+
+### Using Bundler
+
+Add to your `Gemfile`:
+
+```ruby
+source 'https://gem.fury.io/reforge/' do
+  gem 'bcrypt_pbkdf', '~> 1.1.3'
+end
+```
+
+Then run:
+
+```sh
+bundle install
+```
+
+### Using gem command
+
+Install directly from the gem server:
+
+```sh
+gem install bcrypt_pbkdf --version 1.1.3 --source https://gem.fury.io/reforge/
+```
+
 ## Acknowledgements
 
 * The gut of the code is based on OpenBSD's bcrypt_pbkdf.c implementation
