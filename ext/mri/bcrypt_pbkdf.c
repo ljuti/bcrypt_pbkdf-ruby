@@ -78,7 +78,7 @@ bcrypt_hash(const uint8_t *sha2pass, const uint8_t *sha2salt, uint8_t *out)
 		cdata[i] = Blowfish_stream2word(ciphertext, sizeof(ciphertext),
 		    &j);
 	for (i = 0; i < 64; i++)
-		blf_enc(&state, cdata, sizeof(cdata) / sizeof(uint32_t));
+		blf_enc(&state, cdata, BCRYPT_WORDS / 2);
 
 	/* copy out */
 	for (i = 0; i < BCRYPT_WORDS; i++) {
