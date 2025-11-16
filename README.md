@@ -14,7 +14,7 @@ Add to your `Gemfile`:
 
 ```ruby
 source 'https://gem.fury.io/reforge/' do
-  gem 'bcrypt_pbkdf', '~> 1.1.3'
+  gem 'bcrypt_pbkdf', '~> 1.1.4'
 end
 ```
 
